@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos - Júlio Brito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/articles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">JB</a>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="articles.html" class="active">Artigos</a>
+        </div>
+    </nav>
+
+    <main class="articles-container">
+        <header class="articles-header">
+            <h1>Meus Artigos</h1>
+            <p>Compartilhando conhecimento, experiências e descobertas sobre desenvolvimento web e tecnologia.</p>
+        </header>
+
+        <section class="filters" id="filters-container">
+            <!-- Tags will be dynamically generated here -->
+            <button class="tag-btn active" data-tag="all">Todos</button>
+        </section>
+
+        <section class="articles-grid" id="articles-grid">
+            <!-- Articles will be dynamically generated here -->
+        </section>
+    </main>
+
+    <script type="module" src="./js/articles.js"></script>
+</body>
+</html>

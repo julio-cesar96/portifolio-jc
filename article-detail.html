@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo - Júlio Brito</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/article-detail.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">JB</a>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="articles.html" class="active">Artigos</a>
+        </div>
+    </nav>
+
+    <main class="article-detail-container">
+        <a href="articles.html" class="back-link">← Voltar para artigos</a>
+        
+        <div id="article-content" style="display: none;">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span id="article-date" class="date"></span>
+                    <span class="dot">•</span>
+                    <span id="article-read-time" class="read-time"></span>
+                </div>
+                <h1 id="article-title"></h1>
+                <div id="article-tags" class="article-tags"></div>
+            </header>
+            
+            <article id="article-body" class="article-body">
+                <!-- Content injected via JS -->
+            </article>
+        </div>
+
+        <div id="article-error" class="article-error" style="display: none;">
+            <h2>Artigo não encontrado</h2>
+            <p>O artigo que você está procurando não existe ou foi removido.</p>
+            <a href="articles.html" class="btn">Ver todos os artigos</a>
+        </div>
+    </main>
+
+    <script type="module" src="./js/articleDetail.js"></script>
+</body>
+</html>
